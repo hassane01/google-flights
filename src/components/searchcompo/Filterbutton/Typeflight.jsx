@@ -1,12 +1,14 @@
 /* eslint-disable no-unused-vars */
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 import { IoArrowForwardOutline } from "react-icons/io5";
+import ContextFlights from '../../../Context/ContextApp';
 
 const Typeflight = () => {
   const [isopen, setisopen] = useState(false);
-  const [placeholder, setplaceholder] = useState('Round trip');
+  const {placeholder, setplaceholder} = useContext(ContextFlights)
+  
 
   const handleselect = (option) => {
     setplaceholder(option);

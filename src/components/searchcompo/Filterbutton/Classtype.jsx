@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { classname } from '../../../assets/selectdata'
+import ContextFlights from '../../../Context/ContextApp'
 const Classtype = () => {
     const [isopen , setopen ] = useState(false)
-    const [currenttype , setcurrentype] = useState(classname[0].type)
+    
+    const {currenttype , setcurrentype } = useContext(ContextFlights)
+    
     const handledata = (val)=>{
         setcurrentype(val)
         setopen((prev)=>!prev)

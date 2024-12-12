@@ -1,12 +1,14 @@
 /* eslint-disable no-unused-vars */
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { dataperson } from "../../../assets/selectdata";
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 import { RxAvatar } from "react-icons/rx";
+import ContextFlights from "../../../Context/ContextApp";
 
 const Nbrpeople = () => {
   const [isopen, setisopen] = useState(false);
-  const [personcount, setpersoncount] = useState(dataperson);
+  
+  const {personcount, setpersoncount } = useContext(ContextFlights)
 
   const handleIncrement = (index) => {
     setpersoncount((prevCounts) =>

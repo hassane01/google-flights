@@ -1,11 +1,9 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      "@mui/x-date-pickers": "node_modules/@mui/x-date-pickers",
-    },
+  optimizeDeps: {
+    include: ['@mui/x-date-pickers', '@mui/material', '@emotion/react', '@emotion/styled'],
   },
 });

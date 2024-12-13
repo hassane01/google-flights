@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { classname } from '../../../assets/selectdata'
-import ContextFlights from '../../../Context/ContextApp'
+import ContextFlights  from '../../../Context/ContextApp'
 const Classtype = () => {
     const [isopen , setopen ] = useState(false)
     

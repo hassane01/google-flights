@@ -4,7 +4,7 @@ import Typeflight from './Filterbutton/Typeflight'
 
 const FilterBar = () => {
   return (
-    <div className='flex  min-w-[200px]  mb-5 '> 
+    <div className='flex  min-w-[100px]  mb-5 '> 
         <Typeflight/>
         <Nbrpeople/>
         <Classtype/>

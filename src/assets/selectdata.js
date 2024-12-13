@@ -7,9 +7,9 @@ export  const dataperson = [
 ]
 
 export const classname  = [
-    {type:'Economy class'},
-    {type:'Premuim Economy Class'},
-    {type:'Business'},
-    {type:'First class'}
+   
+    {type:'premium_economy'},
+    {type:'business'},
+    {type:'first'}
     
 ]

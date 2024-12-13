@@ -8,7 +8,7 @@ import OneDatePicker from "./searchcompo/Datespicker/OneDatePicker"
 const Search = () => {
   const {placeholder} = useContext(ContextFlights)
   return (
-    <div className="border-2 p-3  m-5 flex flex-col min-w-[200px]  relative  ">
+    <div className="border-2 p-3  m-5 flex flex-col min-w-[100px]  relative  ">
             <FilterBar/>
             <div className="md:flex pb-5">
 
@@ -16,7 +16,7 @@ const Search = () => {
             {placeholder === 'One way tickets' ? <OneDatePicker/> :<Datepicker/> }
             
             </div>
-            <ButtonSearch/>
+            
             
             
             

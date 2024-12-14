@@ -3,7 +3,7 @@ import { useContext, useState } from 'react';
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 import { IoArrowForwardOutline } from "react-icons/io5";
-import ContextFlights from '../../../Context/ContextApp';
+import { ContextFlights } from '../../../Context/ContextApp';
 
 const Typeflight = () => {
   const [isopen, setisopen] = useState(false);
@@ -45,12 +45,7 @@ const Typeflight = () => {
           >
             One way tickets
           </div>
-          <div
-            className='px-4 py-2 hover:bg-gray-100 cursor-pointer'
-            onClick={() => handleselect('Multi-destination')}
-          >
-            Multi-destination
-          </div>
+          
         </div>
       )}
     </div>

@@ -1,6 +1,6 @@
 
 import  { useContext } from "react";
-import ContextFlights from "../Context/ContextApp";
+import { ContextFlights } from "../Context/ContextApp";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
 const Flightdata = () => {

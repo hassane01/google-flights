@@ -1,6 +1,6 @@
 import  { useContext } from 'react'
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
-import ContextFlights from '../../Context/ContextApp';
+import { ContextFlights } from '../../Context/ContextApp';
 import ButtonSearch from './ButtonSearch';
 
 const Citysearch = () => {

@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+
+import  { useContext } from "react";
 import ContextFlights from "../Context/ContextApp";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
-
 const Flightdata = () => {
-  const { flights } = useContext(ContextFlights);
+  const { flights , placeholder } = useContext(ContextFlights);
   const formatDuration = (minutes) => {
     const hours = Math.floor(minutes / 60);
     const mins = minutes % 60;
@@ -17,10 +17,18 @@ const Flightdata = () => {
           key={flight.id}
           className="min-w-[100px]  flex mb-10 border-b-2 border-b-gray-600 flex-col"
           >
-            <div className="flex flex-col items-center">
-            <h1 className="text-center text-[18px] font-semibold">Round-Trip</h1>
-            <FaArrowRightArrowLeft />
-            </div>
+            
+            {placeholder ==='Round trip' ?<div className="flex flex-col items-center">
+              
+              <h1 className="text-center text-[18px] font-semibold">Round-Trip</h1>
+            
+              <FaArrowRightArrowLeft />
+              </div> : <div className="flex flex-col items-center">
+              
+              <h1 className="text-center text-[18px] font-semibold">One way tickets</h1>
+            
+              <FaLongArrowAltRight />
+              </div>}
           {flight.legs.map((leg, index) => (
             <div key={index} className=" holder flex flex-col  ss:flex-row  p-4  mb-5">
               <img

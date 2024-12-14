@@ -1,10 +1,8 @@
-import React, { useContext }  from 'react'
 import { IoSearch } from "react-icons/io5";
-import ContextFlights from '../../Context/ContextApp';
 
 
 const ButtonSearch = ({Submission}) => {
-  const {setLoading} = useContext(ContextFlights)
+
   
   
   return (
